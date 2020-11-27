@@ -1,0 +1,6 @@
+<div class="row">
+  <h1>{{cathegory.name}}</h1>
+  <div class="content">
+    <app-card [restaurant]="rest" *ngFor="let rest of cathegory.restaurants"></app-card>
+  </div>
+</div>

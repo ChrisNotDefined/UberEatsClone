@@ -1,0 +1,30 @@
+div.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 5px 10px gray;
+  background-color: white;
+  padding: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.nav-bar .left {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.nav-bar .left * {
+  margin: 0;
+  margin-right: 50px;
+  font-size: 1.4em;
+  font-weight: normal;
+}
+
+.nav-bar .left h2.Title {
+  font-size: 2em
+}
+

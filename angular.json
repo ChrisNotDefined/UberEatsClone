@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "UberEats"
+    }
+  },
+  "defaultProject": "UberEats",
+  "cli": {
+    "analytics": "3c555552-c0f1-4675-b19a-1cffe5ba507c"
+  }
 }

@@ -1,0 +1,35 @@
+.row {
+  max-width: 100%;
+  border-color: rgb(189, 188, 188);
+  border-width: 1px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.row:not(:last-child) {
+  border-style: solid none none;
+}
+
+.row h1 {
+  font-size: 1.5em;
+  font-weight: normal;
+  color: gray;
+  margin: 0;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.row .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.row .content *:last-child {
+  justify-self: self-start;
+}
+
+// Spacing for the elements in the row
+.row .content * {
+  margin-top: 20px;
+}
