@@ -35,3 +35,19 @@ button:hover {
 button:active {
   background-color: #1AAB4C;
 }
+
+input {
+  border: solid #1AAB4C 1px;
+  border-radius: 10px;
+  outline-offset: 3px;
+  outline-width: 0px;
+  padding: 5px;
+  font-size: 1em;
+  outline-color: #1AAB4C;
+  transition: all ease-in-out 200ms; 
+}
+
+input:focus {
+  outline-width: 2px;
+  background-color: rgb(228, 228, 228);
+}

@@ -1,3 +1,5 @@
+import { PromosModule } from './components/promos/promos.module';
+import { PromotionsState } from './Models/promotions.redux';
 import { CatalogState } from './Models/catalog.redux';
 import { AssetsModule } from './components/assets/assets.module';
 import { HomeModule } from './components/home/home.module';
@@ -10,6 +12,7 @@ import { AppComponent } from './app.component';
 
 import { NgxsModule } from '@ngxs/store';
 import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,9 +20,12 @@ import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
     BrowserModule,
     AppRoutingModule,
     HomeModule,
+    PromosModule,
     LoginModule,
     AssetsModule,
-    NgxsModule.forRoot([CatalogState]),
+    NgxsModule.forRoot([CatalogState, PromotionsState], {
+      developmentMode: !environment.production,
+    }),
     NgxsReduxDevtoolsPluginModule.forRoot(),
   ],
   providers: [],

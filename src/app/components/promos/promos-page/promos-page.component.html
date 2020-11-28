@@ -1,1 +1,3 @@
-<p>promos-page works!</p>
+<div>
+  <app-promo-card [promotion]="promo" *ngFor="let promo of promotions$ | async"></app-promo-card>
+</div>
