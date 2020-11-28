@@ -16,6 +16,15 @@ export class LoginPageComponent implements OnInit {
   });
 
   ngOnInit(): void {
+
+  }
+
+  validate(): void {
+    if(this.loginForm.valid) {
+      alert('Form válido');
+    } else {
+      alert("Form inválido")
+    }
   }
 
 }
