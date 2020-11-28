@@ -1,0 +1,35 @@
+.background {
+  height: 60vh;
+  background-image: url("https://techcrunch.com/wp-content/uploads/2019/07/uber-eats-Dine-In.png");
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 130ms ease-out;
+}
+
+.content * {
+  font-size: 3em;
+  margin: 10px;
+  color: white;
+}
+
+.content h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: normal;
+  font-size: 1.4em;
+}
+
+.content:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.content:active {
+  background-color: rgba(0, 0, 0, 0.6);
+}

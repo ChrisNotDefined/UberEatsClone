@@ -1,8 +1,9 @@
 div.nav-bar {
+  z-index: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
-  box-shadow: 0 5px 10px gray;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.486);
   background-color: white;
   padding: 10px;
   position: -webkit-sticky;
@@ -22,9 +23,32 @@ div.nav-bar {
   margin-right: 50px;
   font-size: 1.4em;
   font-weight: normal;
+  outline-offset: 2px;
+  outline-color: green;
+}
+
+.nav-bar .left *.active {
+  color: green;
 }
 
 .nav-bar .left h2.Title {
   font-size: 2em
 }
 
+.nav-bar .left :not(.Title):hover {
+  color: rgb(78, 78, 78);
+}
+
+.nav-bar .left>:not(.Title)::after {
+  content: '';
+  display: block;
+  width: 0%;
+  border-bottom: solid gray 2px;
+  position: relative;
+  transition: all 200ms linear
+}
+
+.nav-bar .left :hover:not(.Title)::after {
+  width: 100%;
+  border-color: rgb(78, 78, 78);
+}

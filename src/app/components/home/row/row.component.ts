@@ -13,8 +13,6 @@ export class RowComponent implements OnInit {
   @Input() cathegory: ICathegory;
 
   ngOnInit(): void {
-    console.log('My cat: ', this.cathegory);
-    
   }
 
 }

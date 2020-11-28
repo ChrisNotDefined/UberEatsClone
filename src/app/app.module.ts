@@ -1,6 +1,7 @@
 import { CatalogState } from './Models/catalog.redux';
 import { AssetsModule } from './components/assets/assets.module';
 import { HomeModule } from './components/home/home.module';
+import { LoginModule } from './components/login/login.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -16,6 +17,7 @@ import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
     BrowserModule,
     AppRoutingModule,
     HomeModule,
+    LoginModule,
     AssetsModule,
     NgxsModule.forRoot([CatalogState]),
     NgxsReduxDevtoolsPluginModule.forRoot(),

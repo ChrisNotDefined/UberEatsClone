@@ -7,6 +7,15 @@
   height: 30vh;
   max-height: 400px;
   min-height: 200px;
+  transition: box-shadow ease-in 200ms, background-color ease-in 100ms;
+}
+
+.container:hover {
+  box-shadow: 0px 8px 8px rgba(59, 59, 59, 0.534);
+}
+
+.container:active {
+  background-color: lightgrey;
 }
 
 .card-image {
@@ -21,16 +30,18 @@
   margin: 0 10px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
   column-count: 2;
 }
 
-.card-body > div {
+.card-details {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.card-details * {
+  width: auto;
+  display: block;
 }
 
 .card-body * {

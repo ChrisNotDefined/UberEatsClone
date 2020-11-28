@@ -2,12 +2,12 @@
 <div class="container">
   <img class="card-image" src="{{restaurant.imageUrl}}" />
   <div class="card-body">
-    <div>
+    <div class="card-details">
       <h4>
         {{restaurant.name}}
       </h4>
       <h5>
-        {{restaurant.priceRange? (restaurant.priceRange[0] | currency) : ''}}
+        {{restaurant.priceRange? (restaurant.priceRange[0] | currency) : ''}} - {{restaurant.priceRange? (restaurant.priceRange[1] | currency) : ''}}
       </h5>
     </div>
     <p>
